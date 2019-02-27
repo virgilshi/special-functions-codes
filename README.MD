@@ -11,7 +11,7 @@
 3. time_cdf.py                      Cumulative distribution of request respond time
 4. time_q2c.py                      x: request issue time    y: The corresponding response time
 
-new
+**new**
 key_val_cnt_plot.py                 Count the number of reads and writes per page address,
                                     and draw the distribution
 
