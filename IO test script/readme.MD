@@ -1,4 +1,4 @@
-shell process
+### shell process
 
 - all statements in the shell can be understood as processes
 - in all cases where it does not feel like it is executing in the normal order, consider that the child process is not synchronized with the main process,i.e., try to use shell cmd `wait`, refer to 1.sh
