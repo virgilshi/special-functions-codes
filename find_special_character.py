@@ -1,6 +1,6 @@
 import os
 filepath=r"/Users/shiliu/Desktop/leveldb_fix/leveldb"
-characters=r"/tmp"
+characters=r"DeleteObsoleteFiles"
 def search_special_string(path):
 	if os.path.isdir(path) :
 		for t in os.listdir(path):
