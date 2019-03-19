@@ -1,6 +1,6 @@
 import os
-filepath=r"/Users/shiliu/Desktop/leveldb_fix/leveldb"
-characters=r"DeleteObsoleteFiles"
+filepath=r"C:\Users\shiliu\Desktop\leveldb_fix\leveldb"
+characters=r"MakeRoomForWrite"
 def search_special_string(path):
 	if os.path.isdir(path) :
 		for t in os.listdir(path):
@@ -9,7 +9,7 @@ def search_special_string(path):
 		import re
 		if re.search("(\.cc|\.h)$",path) is not None :
 			# print(path)
-			with open(path,mode="r") as f :
+			with open(path,mode="r",encoding="UTF-8") as f :
 				
 				lines = f.readlines()
 				for i in range(len(lines)) :
