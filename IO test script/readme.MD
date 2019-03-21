@@ -9,3 +9,4 @@
 3. merge.py denotes the separate read and write trace parsed by blkparse is merged into a single completed trace
 4. align_4K checks whether all the lsn and size fit 4K alignment
 5. ts_mobibench.sh test mobibench
+6. the same as 2.sh, however try to use different way.
