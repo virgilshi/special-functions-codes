@@ -1,0 +1,1 @@
+Run fio, collect trace from f2fs, and make cnt statistics and draw spatial layout  for it.

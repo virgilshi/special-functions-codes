@@ -33,3 +33,9 @@
 
 # Other
 *.DS_Store
+
+# traces, no need to upload because of their large size
+*.dat
+
+#LOG
+*.log
