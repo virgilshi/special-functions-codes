@@ -8,8 +8,11 @@ Created on Tue Oct 16 14:33:47 2018
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
 from pylab import *
+import sys
 
-t = "exchange.ascii"
+t = sys.argv[1]
+print("Testing trace : %s\n" % t)
+#t = "exchange.ascii"
 
 #打开源trace文件、修改后目标存储文件
 r_cnt=0
@@ -33,13 +36,15 @@ with open(t, "r") as f :
 			x_values_w.append(time) # time
 			y_values_w.append(lsn) # addr
 		
-
+print("complete collecting data...\n")
 '''
 scatter() 
 x:横坐标 y:纵坐标 s:点的尺寸
 '''
 plt.scatter(x_values_r, y_values_r, c="red", s=1, label="Read")
 plt.scatter(x_values_w, y_values_w, c="green", s=1, label="Write")
+
+print("complete scattering...\n")
 
 # 设置图表标题并给坐标轴加上标签
 plt.title('Request Start Sertor Numbers', fontsize=14)
@@ -51,7 +56,9 @@ plt.legend(loc='best')
 
 # savename='time_start_size.jpg'
 # plt.savefig(savename)
-savename='time_start_size.jpg'
+savename='time_start_size.png'
+print("waiting to draw result picture...\n")
 plt.savefig(savename)
+#plt.show()
 
 print("end")       
