@@ -26,6 +26,7 @@ with open(t, "r") as f :
 	lines = f.readlines()
 	for line in lines :
 		list1 = line.split()
+		#print(list1)
 		time = list1[0]
 		lsn = list1[2]
 		op = list1[-1]
@@ -41,8 +42,9 @@ print("complete collecting data...\n")
 scatter() 
 x:横坐标 y:纵坐标 s:点的尺寸
 '''
-plt.scatter(x_values_r, y_values_r, c="red", s=1, label="Read")
-plt.scatter(x_values_w, y_values_w, c="green", s=1, label="Write")
+#plt.scatter(x_values_r, y_values_r, c="red", s=1, label="Read")
+#plt.scatter(x_values_w, y_values_w, c="green", s=1, label="Write")
+plt.plot(x_values_w, y_values_w)
 
 print("complete scattering...\n")
 
