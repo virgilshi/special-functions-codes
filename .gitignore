@@ -40,3 +40,7 @@
 
 #LOG
 *.log
+
+#other
+*.png
+*.jpg
